@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/theme.css">
+    <script src="../JS/main.js"></script>
+    <title>CPAN-134 Project</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/SiteLogo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#highSchoolArrow").click(function(){
+                $("#highSchoolInfo").slideToggle();
+            });
+            $("#selfTeachingArrow").click(function(){
+                $("#selfTeachingInfo").slideToggle();
+            });
+            $("#creatingGamesArrow").click(function(){
+                $("#creatingGamesInfo").slideToggle();
+            });
+            $("#collegeArrow").click(function(){
+                $("#collegeInfo").slideToggle();
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="projects-background-area">
+        <div class="topnav">
+            <a href="../index.html">
+                <img src="../Images/Profile Pic.jpg" alt="Home" style="width:20px;height:20px;border-radius: 50%;">
+            </a>
+            <a href="../index.html">Home</a>
+            <a href="../Pages/Experience.html">Experience</a>
+            <a href="../Pages/Projects.html">Projects</a>
+            <a href="../Pages/Hobbies.html">Hobbies</a>
+            <a href="../Pages/Contact.html">Contact</a>
+            <a href="../Pages/About.html">About</a>
+        </div>
+        <div class="content-area">
+            <div class="content">
+                <h1>Experience</h1>
+                <p>My experience with programming</p>
+                <a href="#qualInfo">
+                    <img src="../Images/downArrow.png" alt="downArrow" style="width: 80px; height: 80px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="qualInfo">
+        <div class="box">
+            <h2>High School</h2> 
+            <img src="../Images/white-down-arrow.png" class="toggleArrow" id="highSchoolArrow" style="width: 30px; height: 30px;">
+            <p class="toggleText" id="highSchoolInfo">I went to T.L. Kennedy high school and it was in grade 11 when I was introduced to
+                programming. Before that point I had no idea what coding was, or how it worked. Even
+                though I was super interested in computers. I took computer science again in grade 12,
+                and even though my marks were barely getting me to pass the course, because of my lack
+                of understanding of coding, I loved programming.
+            </p>
+        </div>
+        <div class="box">
+            <h2>Self-Teaching</h2>
+            <img src="../Images/white-down-arrow.png" class="toggleArrow" id="selfTeachingArrow" style="width: 30px; height: 30px;">
+            <p class="toggleText" id="selfTeachingInfo">After I finished high school. I took one gap year to work. During that year, I was so
+                interested in my new found hobby that was introduced to me in high school. I was watching
+                a lot of tutorials on how to code and did some small projects. And I learned a lot during
+                that time.
+            </p>
+        </div>
+        <div class="box">
+            <h2>Creating Games</h2>
+            <img src="../Images/white-down-arrow.png" class="toggleArrow" id="creatingGamesArrow" style="width: 30px; height: 30px;">
+            <p class="toggleText" id="creatingGamesInfo">During my time off school, I played a lot of video games. One day, I thought, if I like
+                playing games so much, and I love coding and making stuff. Why don't I try to make my own
+                game. And with that, I started looking into tutorials on how to create my own game. I
+                picked up Unity Game engine and I created a lot of small "games" that had basic movement
+                and very small levels. However, my last game was a game that I was satisfied with. And
+                I will share more about it in the <b>Hobbies</b> page.
+            </p>
+        </div>
+        <div class="box">
+            <h2>College</h2>
+            <img src="../Images/white-down-arrow.png" class="toggleArrow" id="collegeArrow" style="width: 30px; height: 30px;">
+            <p class="toggleText" id="collegeInfo">Currently I go to Humber college and I take the Computer Programming and Analysis
+                program. And so far, I have learned a lot about programming. This is still the very
+                beginning of my journy with programming.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/theme.css">
+    <script src="../JS/main.js"></script>
+    <title>CPAN-134 Project</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/SiteLogo.png" />
+</head>
+
+
+<body>
+    <div class="projects-background-area">
+        <div class="topnav">
+            <a href="../index.html">
+                <img src="../Images/Profile Pic.jpg" alt="Home" style="width:20px;height:20px;border-radius: 50%;">
+            </a>
+            <a href="../index.html">Home</a>
+            <a href="../Pages/Experience.html">Experience</a>
+            <a href="../Pages/Projects.html">Projects</a>
+            <a href="../Pages/Hobbies.html">Hobbies</a>
+            <a href="../Pages/Contact.html">Contact</a>
+            <a href="../Pages/About.html">About</a>
+        </div>
+        <div class="content-area" id="content-area">
+            <div class="content">
+                <h1>Projects</h1>
+                <p>Some projects I have done</p>
+                <a href="#projectsInfo">
+                    <img src="../Images/downArrow.png" alt="downArrow" style="width: 80px; height: 80px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="projectsInfo">
+        <div class="box">
+            <p>
+                I did this function as an assignment in grade 11. It prompts the user for 2
+                different numbers and returns the bigger number of the 2.
+            </p>
+            <button onclick="biggerNum()">BiggerNumber</button>
+        </div>
+        <div class="box">
+            <p>
+                This function was for another assignment. However, this is not a complete
+                function. The idea is to encrypt a message a certain way then print the encrypted message to the console
+                and be able to decrypt it with a key.
+            </p>
+            <button onclick="encryptMsg()"> Encrypt Message </button>
+        </div>
+        <div class="box">
+            <p>
+                This function was done as an exercise to be able to change HTML content with a click.
+            </p>
+            <p id="demo" onclick="changeText()">Click me to change the text</p>
+        </div>
+        <div class="box">
+            <p>This program was done by me for Lab 3 of this course. It works almost like a calculator.</p>
+            <div class="inputs">
+                <form>
+                    <label for="fNum">Enter First Number</label>
+                    <input type="text" id="fNum" name="fNum"><br><br>
+                    <label for="sNum">Enter Second Number</label>
+                    <input type="text" id="sNum" name="sNum"><br><br>
+                </form>
+            </div>
+            <div class="operators">
+                <button type="button" onclick="Add()">+</button>
+                <button type="button" onclick="Sub()">-</button>
+                <button type="button" onclick="Multiply()">x</button>
+                <button type="button" onclick="Divide()">/</button>
+            </div>
+            <div class="answer">
+                <p id="output">Answer will display here!</p>
+            </div>
+        </div>
+        <div class="box">
+            <p>This form was done half by the teacher and I had to add the password and confirm password
+            collumn and validate them. This was done for Lab 4 of this course.
+            </p>
+            <form method="get" action="../Pages/SubmitFormPage.html" name="myForm" onsubmit="return(validate());">
+                <table cellspacing="2" cellpadding="2" border="1">
+                    <tr>
+                        <td align="right">Name</td>
+                        <td><input type="text" name="Name" /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">EMail</td>
+                        <td><input type="text" name="EMail" /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">Zip Code</td>
+                        <td><input type="text" name="Zip" /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">Country</td>
+                        <td>
+                            <select name="Country">
+                                <option value="-1" selected>[choose yours]</option>
+                                <option value="1">USA</option>
+                                <option value="2">UK</option>
+                                <option value="3">INDIA</option>
+                                <option value="4">CANADA</option>
+                                <option value="5">SYRIA</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">Password</td>
+                        <td><input type="password" name="Password" /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">Confirm Password</td>
+                        <td><input type="password" name="ConfirmPassword" /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">Submit</td>
+                        <td><input type="submit" value="Submit" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="box">
+            <p>
+                And finally, the last project is... This... This website. Thank you :)
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
